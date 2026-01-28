@@ -23,7 +23,7 @@ I        =   (1:L);
 I        =   reshape(I, N, M);
 NN       =   length(Row);
 MM       =   length(Col);
-alphaG = zeros(NN,MM, PatchSize*PatchSize*l, ArrayNo);
+alphaG = zeros(NN, MM, PatchSize*PatchSize*l, ArrayNo);
 
 
 2) z = perform_L2_SVTV(z_Init, g, Opts);
@@ -37,6 +37,7 @@ Opts.beta = 0.2;           % SVTV (main parameter)
 Opts.Maxiter_q = 10;       % N_z (SVTV)
 Opts.tol_q = 1e-3;     
 ** Output: z => resored image "w = HSV_to_RGB(z)"
+
 
 
 
